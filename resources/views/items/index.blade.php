@@ -25,7 +25,7 @@
                 <td>{{ link_to_route('items.edit', 'Edit', ['item' => $item->id], ['class' => 'btn btn-primary']) }}</td>
                 <td>
                     {{ Form::open(['route' => ['items.destroy', $item->id], 'method' => 'delete']) }}
-                    {{ Form::submit('削除', ['class' => 'btn btn-danger']) }}
+                    {{ Form::submit('Delete', ['class' => 'btn btn-danger']) }}
                     {{ Form::close() }}
                 </td>
 

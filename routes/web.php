@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,8 @@ Route::get('/', function () {
 });
 
 Route::resource('items', ItemController::class);
+Route::resource('categories', CategoryController::class);
+
+//Initial route for /create and /store
+//Route::get('/item/create',[ItemController::class,'create'])->name('item.create');
+//Route::post('/item/store',[ItemController::class,'store'])->name('item.store');
